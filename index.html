@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ramazanov Aldiyar — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Экран-заставка -->
+  <div id="splash" aria-hidden="true">
+    <h1>RAMAZANOV ALDIYAR<br>PORTFOLIO</h1>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="brand-title">RAMAZANOV</div>
+        <div class="brand-sub">Aldiyar • Portfolio</div>
+      </div>
+
+      <nav class="site-nav" aria-label="Навигация">
+        <a class="nav-link active" href="index.html">Главная</a>
+        <a class="nav-link" href="about.html">О себе</a>
+        <a class="nav-link" href="projects.html">Проекты</a>
+        <a class="nav-link" href="contact.html">Контакты</a>
+      </nav>
+
+      <button id="themeToggle" class="theme-btn" type="button" aria-label="Сменить тему">
+        Тема: <span id="themeLabel">Тёмная</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="panel hero">
+      <div class="hero-grid">
+        <div>
+          <h1 class="hero-title">Привет!</h1>
+          <p class="hero-text">
+            Я студент Computer Science. Собираю портфолио и делаю учебные проекты:
+            веб-страницы, небольшие приложения и игровые эксперименты.
+          </p>
+          <p class="hero-quote">
+            Моя цель — вести спокойную и незаметную жизнь.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn" href="projects.html">Смотреть проекты</a>
+            <a class="btn btn-outline" href="contact.html">Написать мне</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <img src="avatar.jpg" alt="Аватар" class="avatar" />
+          <div class="hero-mini">
+            <div><b>Имя:</b> Алдияр</div>
+            <div><b>Город:</b> Павлодар</div>
+            <div><b>Университет:</b> Торайгыров Университет</div>
+            <div><b>Направление:</b> Computer Science</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Коротко обо мне</h2>
+      <p>
+        Интересуюсь фронтендом, 3D-работами и Game Dev. Люблю делать визуально стильные штуки
+        и постепенно улучшаю проекты, чтобы они выглядели как готовый продукт.
+      </p>
+
+      <div class="badges">
+        <span class="badge">HTML</span>
+        <span class="badge">CSS</span>
+        <span class="badge">JavaScript</span>
+        <span class="badge">Python</span>
+        <span class="badge">RenPy</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>© <span id="year"></span></span>
+      <span class="dot">•</span>
+      <span>STARASENKAI</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

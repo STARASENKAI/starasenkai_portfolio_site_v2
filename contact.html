@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Контакты — Ramazanov Aldiyar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="brand-title">RAMAZANOV</div>
+        <div class="brand-sub">Aldiyar • Portfolio</div>
+      </div>
+
+      <nav class="site-nav" aria-label="Навигация">
+        <a class="nav-link" href="index.html">Главная</a>
+        <a class="nav-link" href="about.html">О себе</a>
+        <a class="nav-link" href="projects.html">Проекты</a>
+        <a class="nav-link active" href="contact.html">Контакты</a>
+      </nav>
+
+      <button id="themeToggle" class="theme-btn" type="button" aria-label="Сменить тему">
+        Тема: <span id="themeLabel">Тёмная</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h2>Контакты</h2>
+
+      <div class="contact-grid">
+        <div>
+          <h3 class="h3">Форма обратной связи</h3>
+          <form id="contactForm" class="form">
+            <label class="field">
+              <span>Имя</span>
+              <input type="text" name="name" placeholder="Введите имя" required />
+            </label>
+
+            <label class="field">
+              <span>Email</span>
+              <input type="email" name="email" placeholder="example@mail.com" required />
+            </label>
+
+            <label class="field">
+              <span>Сообщение</span>
+              <textarea name="message" rows="5" placeholder="Напишите сообщение..." required></textarea>
+            </label>
+
+            <button class="btn" type="submit">Отправить</button>
+            <p id="formStatus" class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <div>
+          <h3 class="h3">Контактная информация</h3>
+          <p class="contact-line">
+            <b>Email:</b>
+            <a class="contact-email" href="mailto:ramazanov.pvl.a@gmail.com">ramazanov.pvl.a@gmail.com</a>
+          </p>
+
+          <div class="contact-buttons">
+            <a class="btn" href="https://t.me/starasenkai" target="_blank" rel="noopener">Telegram</a>
+            <a class="btn btn-outline" href="https://github.com/STARASENKAI" target="_blank" rel="noopener">GitHub</a>
+          </div>
+
+          <div class="note">
+            <b>Примечание:</b> Форма в учебном варианте показывает сообщение об отправке (без реальной отправки на сервер).
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>© <span id="year"></span></span>
+      <span class="dot">•</span>
+      <span>STARASENKAI</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

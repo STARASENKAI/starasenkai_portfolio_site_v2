@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>О себе — Ramazanov Aldiyar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="brand-title">RAMAZANOV</div>
+        <div class="brand-sub">Aldiyar • Portfolio</div>
+      </div>
+
+      <nav class="site-nav" aria-label="Навигация">
+        <a class="nav-link" href="index.html">Главная</a>
+        <a class="nav-link active" href="about.html">О себе</a>
+        <a class="nav-link" href="projects.html">Проекты</a>
+        <a class="nav-link" href="contact.html">Контакты</a>
+      </nav>
+
+      <button id="themeToggle" class="theme-btn" type="button" aria-label="Сменить тему">
+        Тема: <span id="themeLabel">Тёмная</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h2>О себе</h2>
+      <div class="about-grid">
+        <div>
+          <img src="avatar.jpg" alt="Аватар" class="avatar avatar-left" />
+        </div>
+
+        <div class="about-info">
+          <p><b>Имя:</b> Алдияр</p>
+          <p><b>Город:</b> Павлодар</p>
+          <p><b>Университет:</b> Торайгыров Университет</p>
+          <p><b>Специальность:</b> Computer Science</p>
+
+          <h3 class="h3">Интересы</h3>
+          <ul>
+            <li>Веб-разработка и интерфейсы</li>
+            <li>3D-работы и визуальные проекты</li>
+            <li>Game Dev и интерактивные истории</li>
+          </ul>
+
+          <h3 class="h3">Навыки</h3>
+          <div class="badges">
+            <span class="badge">HTML</span>
+            <span class="badge">CSS</span>
+            <span class="badge">JavaScript</span>
+            <span class="badge">Python</span>
+            <span class="badge">RenPy</span>
+          </div>
+
+          <h3 class="h3">Хобби</h3>
+          <ul>
+            <li>Игры</li>
+            <li>Книги</li>
+            <li>Писательство</li>
+            <li>Музыка</li>
+          </ul>
+
+          <h3 class="h3">Цели</h3>
+          <p>
+            Хочу уверенно прокачать фронтенд и собрать портфолио проектов, которые можно показать
+            преподавателю и работодателю: чистая верстка, аккуратный дизайн, понятная структура и функционал.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>© <span id="year"></span></span>
+      <span class="dot">•</span>
+      <span>STARASENKAI</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
