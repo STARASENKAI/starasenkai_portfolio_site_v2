@@ -1,172 +1,118 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Проекты — Ramazanov Aldiyar</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Проекты — Ramazanov Aldiyar</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header class="site-header">
-<div class="header-inner">
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="brand-title">RAMAZANOV</div>
+        <div class="brand-sub">Aldiyar • Portfolio</div>
+      </div>
 
-<div class="brand">
-<div class="brand-title">RAMAZANOV</div>
-<div class="brand-sub">Aldiyar • Portfolio</div>
-</div>
+      <nav class="site-nav" aria-label="Навигация">
+        <a class="nav-link" href="index.html">Главная</a>
+        <a class="nav-link" href="about.html">О себе</a>
+        <a class="nav-link active" href="projects.html">Проекты</a>
+        <a class="nav-link" href="contact.html">Контакты</a>
+      </nav>
 
-<nav class="site-nav">
-<a class="nav-link" href="index.html">Главная</a>
-<a class="nav-link" href="about.html">О себе</a>
-<a class="nav-link active" href="projects.html">Проекты</a>
-<a class="nav-link" href="contact.html">Контакты</a>
-</nav>
+      <button id="themeToggle" class="theme-btn" type="button" aria-label="Сменить тему">
+        Тема: <span id="themeLabel">Тёмная</span>
+      </button>
+    </div>
+  </header>
 
-<button id="themeToggle" class="theme-btn">
-Тема: <span id="themeLabel">Тёмная</span>
-</button>
+  <main class="container">
+    <section class="panel">
+      <h2>Мои проекты</h2>
+      <p class="muted">
+        Здесь собраны мои основные проекты и учебные работы.
+      </p>
 
-</div>
-</header>
+      <div class="projects-grid">
 
-<main class="container">
+        <article class="project-card">
+          <div class="project-thumb">
+            <img src="./portfolio.png" alt="Скриншот проекта Persona 5 Portfolio">
+          </div>
 
-<section class="panel">
+          <div class="project-body">
+            <h3 class="project-title">Persona 5 Portfolio (v2)</h3>
+            <p class="project-desc">
+              Мой сайт-портфолио в стиле Persona 5. Несколько страниц, единый дизайн и переключение темы.
+            </p>
 
-<h2>Мои проекты</h2>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </article>
 
-<p class="muted">
-Здесь собраны мои основные проекты и эксперименты.
-</p>
+        <article class="project-card">
+          <div class="project-thumb">
+            <img src="./minipage.png" alt="Скриншот мини-страницы с кнопками и блоками">
+          </div>
 
-<div class="projects-grid">
+          <div class="project-body">
+            <h3 class="project-title">Мини-страница с кнопками и блоками</h3>
+            <p class="project-desc">
+              Учебная страница для практики верстки: карточки, секции и адаптивная сетка.
+            </p>
 
-<!-- PROJECT 1 -->
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+            </div>
+          </div>
+        </article>
 
-<article class="project-card">
+        <article class="project-card">
+          <div class="project-thumb">
+            <img src="./vn.png" alt="Скриншот visual novel проекта">
+          </div>
 
-<div class="project-thumb">
-<img src="./portfolio.png">
-</div>
+          <div class="project-body">
+            <h3 class="project-title">Простая Visual Novel</h3>
+            <p class="project-desc">
+              Небольшой эксперимент с визуальной новеллой: сцены, диалоги и система выбора.
+            </p>
 
-<div class="project-body">
+            <div class="project-tags">
+              <span class="tag">RenPy</span>
+              <span class="tag">Python</span>
+            </div>
+          </div>
+        </article>
 
-<h3 class="project-title">
-Persona 5 Portfolio (v2)
-</h3>
+      </div>
+    </section>
 
-<p class="project-desc">
-Мой сайт-портфолио в стиле Persona 5. Несколько страниц,
-единый дизайн и переключение темы.
-</p>
+    <section class="panel">
+      <h2>Будущие проекты</h2>
+      <ul>
+        <li>Сайт-портфолио с фильтрами проектов</li>
+        <li>Мини-игра или лабиринт для практики логики</li>
+        <li>Проект с API для практики запросов и асинхронности</li>
+      </ul>
+    </section>
+  </main>
 
-<div class="project-tags">
-<span class="tag">HTML</span>
-<span class="tag">CSS</span>
-<span class="tag">JavaScript</span>
-</div>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>© <span id="year"></span></span>
+      <span class="dot">•</span>
+      <span>STARASENKAI</span>
+    </div>
+  </footer>
 
-<div class="project-links">
-<a class="btn" href="index.html">Открыть проект</a>
-<a class="btn btn-outline" href="https://github.com/STARASENKAI" target="_blank">Репозиторий</a>
-</div>
-
-</div>
-</article>
-
-<!-- PROJECT 2 -->
-
-<article class="project-card">
-
-<div class="project-thumb">
-<img src="./minipage.png">
-</div>
-
-<div class="project-body">
-
-<h3 class="project-title">
-Мини-страница с кнопками и блоками
-</h3>
-
-<p class="project-desc">
-Учебная страница для практики верстки:
-карточки, секции и адаптивная сетка.
-</p>
-
-<div class="project-tags">
-<span class="tag">HTML</span>
-<span class="tag">CSS</span>
-</div>
-
-<div class="project-links">
-<a class="btn" href="#">Открыть проект</a>
-<a class="btn btn-outline" href="#">Репозиторий</a>
-</div>
-
-</div>
-</article>
-
-<!-- PROJECT 3 -->
-
-<article class="project-card">
-
-<div class="project-thumb">
-<img src="./vn.png">
-</div>
-
-<div class="project-body">
-
-<h3 class="project-title">
-Простая Visual Novel
-</h3>
-
-<p class="project-desc">
-Эксперимент с визуальной новеллой:
-сцены, диалоги и система выбора.
-</p>
-
-<div class="project-tags">
-<span class="tag">RenPy</span>
-<span class="tag">Python</span>
-</div>
-
-<div class="project-links">
-<a class="btn" href="#">Открыть проект</a>
-<a class="btn btn-outline" href="#">Репозиторий</a>
-</div>
-
-</div>
-</article>
-
-</div>
-
-</section>
-
-<section class="panel">
-
-<h2>Будущие проекты</h2>
-
-<ul>
-<li>Сайт-портфолио с фильтрами проектов</li>
-<li>Мини-игра на JavaScript</li>
-<li>Проект с API (погода или новости)</li>
-</ul>
-
-</section>
-
-</main>
-
-<footer class="site-footer">
-<div class="footer-inner">
-<span>© <span id="year"></span></span>
-<span class="dot">•</span>
-<span>STARASENKAI</span>
-</div>
-</footer>
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
